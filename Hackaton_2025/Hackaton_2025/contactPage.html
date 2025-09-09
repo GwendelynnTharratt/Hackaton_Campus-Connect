@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Contact Us</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header-bar"></div>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img id="" src="">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="homePage.html">Home</a>
+            </li>
+            <li>
+                <a href="feedPage.html">Feed</a>
+            </li>
+            <li>
+                <a href="groupPage.html">Groups</a>
+            </li>
+            <li>
+                <a href="materialPage.html">Study Materials</a>
+            </li>
+            <li>
+                <a href="profilePage.html">Profile</a>
+            </li>
+            <li>
+                <a href="contactPage.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero_2">
+        <div class="hero-overlay"></div>
+        <div class="text-overlay">
+            <h1 class="slogan">Contact Us</h1>
+            <p class="slogan">If you have any questions please do not hesitate to contact us. Or fill in the form at the end.</p>
+        </div>
+    </div>
+    
+    <main>
+        <div class="contact-container">
+
+            <section class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>If you have questions or suggestions, reach out to us!</p>
+                <ul>
+                    <li><strong>Email:</strong> support@campusconnect.com</li>
+                    <li><strong>Phone:</strong> +123 456 789</li>
+                    <li><strong>Address:</strong> 123 University Road, City</li>
+                </ul>
+            </section>
+
+            <section class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contactForm">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    <p id="formSuccess" class="hidden">Thank you! Your message has been sent.</p>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+  <footer>
+    <p>&copy; 2025 Campus Connect</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

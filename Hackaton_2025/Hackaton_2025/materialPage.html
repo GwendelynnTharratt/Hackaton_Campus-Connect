@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Study Material</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header-bar"></div>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img id="campusconnect-logo" src="./media/CampusConnect-logo.png" alt="Campus Connect Logo" width="80" height="90">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="homePage.html">Home</a>
+            </li>
+            <li>
+                <a href="feedPage.html">Feed</a>
+            </li>
+            <li>
+                <a href="groupPage.html">Groups</a>
+            </li>
+            <li>
+                <a href="materialPage.html">Study Materials</a>
+            </li>
+            <li>
+                <a href="profilePage.html">Profile</a>
+            </li>
+            <li>
+                <a href="contactPage.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero_2">
+        <div class="hero-overlay"></div>
+        <div class="text-overlay">
+            <h1 class="slogan">All the Uploaded Study Material</h1>
+            <p class="slogan">Slides, Guides, and Notes. Please do share, sharing resources can help many on and off campus.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="materials">
+        <h2>Study Materials</h2>
+        <p>Upload, browse, and download shared notes, past papers, and resources.</p>
+
+        <!-- Upload Resource -->
+        <div class="upload-box">
+            <h3>Upload a Material</h3>
+            <form id="materialForm">
+                <label for="title">Title:</label>
+                <input type="text" id="materialTitle" name="title" placeholder="Enter title" required>
+
+                <label for="file">Choose File:</label>
+                <input type="file" id="materialFile" name="file" required>
+
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <!-- List  -->
+        <div class="materials-list" id="materialsContainer">
+            <h3>Available Materials</h3>
+            <ul>
+                <li>
+                    <strong>Networking Notes - CONE5112</strong> 
+                    <a href="#">Download</a>
+                </li>
+                <li>
+                    <strong>Computer Science Past Exam</strong> 
+                    <a href="#">Download</a>
+                </li>
+                <li>
+                    <strong>MAST5112 Module Manual</strong> 
+                    <a href="#">Download</a>
+                </li>
+            </ul>
+        </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Campus Connect</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>

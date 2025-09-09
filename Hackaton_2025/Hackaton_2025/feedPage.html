@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Feed</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header-bar"></div>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img id="campusconnect-logo" src="./media/CampusConnect-logo.png" alt="Campus Connect Logo" width="80" height="90">
+        </div>
+        <ul class="nav-links">
+            <ul class="nav-links">
+            <li>
+                <a href="homePage.html">Home</a>
+            </li>
+            <li>
+                <a href="feedPage.html">Feed</a>
+            </li>
+            <li>
+                <a href="groupPage.html">Groups</a>
+            </li>
+            <li>
+                <a href="materialPage.html">Study Materials</a>
+            </li>
+            <li>
+                <a href="profilePage.html">Profile</a>
+            </li>
+            <li>
+                <a href="contactPage.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero_2">
+        <div class="hero-overlay"></div>
+        <div class="text-overlay">
+            <h1 class="slogan">Student Feed</h1>
+            <p class="slogan">Here is where we share experiences with other students and showcase memories made on campus</p>
+        </div>
+    </div>
+
+  <!-- Posts Feed-->
+    <section class="latest-posts-feed" id="feedContainer">
+
+        <div class="post-card">
+            <img src="./media/studyspots-image.jpg" alt="Study Spots Image">
+            <div class="post-content">
+                <h3>New Study Spots!</h3>
+                <p>Check out the cozy study spots near the library for quiet study time.</p>
+                <div class="post-meta">By Alice • April 9, 2025</div>
+                <button class="comment-toggle">💬 View Comments</button>
+                <div class="comments-section hidden">
+                    <p><strong>John:</strong> Love these spots!</p>
+                    <p><strong>Maria:</strong> Definitely going to try these out.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-card">
+            <img src="./media/studentdiet-image.jpg" alt="Student Diet Image">
+            <div class="post-content">
+                <h3>A Healthy Student Diet</h3>
+                <p>Having a healthy diet as a student is very important to keep up with all the assignments we face, keep an eye out for next weeks post for diet tips.</p>
+                <div class="post-meta">By VC Team • Jun 3, 2025</div>
+                 <button class="comment-toggle">💬 View Comments</button>
+                <div class="comments-section hidden">
+                    <p><strong>Jean:</strong> I will keep an eye out.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="post-card">
+        <img src="./media/budgeting-image.jpg" alt="Budgeting Image">
+        <div class="post-content">
+            <h3>Some Bidgeting Tips 2025</h3>
+            <p>Student need to learn to budget, as it is an important skill, if you want to learn how to extend your monthly budget past a week, join us on Friday for a budgeting workshop. See you there!</p>
+            <div class="post-meta">By Tom • Sept 9, 2025</div>
+            <button class="comment-toggle">💬 View Comments</button>
+            <div class="comments-section hidden">
+            <p><strong>Greg:</strong> Can't wait to attend</p>
+            </div>
+        </div>
+        </div>
+
+  </section>
+
+  <!-- Post Button -->
+  <button id="addPostBtn" class="floating-btn">＋</button>
+
+  <!-- Modal - Add Post -->
+  <div id="postModal" class="modal hidden">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Create a New Post</h2>
+        <form id="postForm">
+            <div class="form-group">
+                <label for="postTitle">Title</label>
+                <input type="text" id="postTitle" placeholder="Post Title" required>
+            </div>
+            <div class="form-group">
+                <label for="postContent">Content</label>
+                <textarea id="postContent" placeholder="Write your post..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="postAuthor">Your Name</label>
+                <input type="text" id="postAuthor" placeholder="Your Name" required>
+            </div>
+            <button type="submit" class="btn-submit">Post</button>
+        </form>
+    </div>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Campus Connect. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

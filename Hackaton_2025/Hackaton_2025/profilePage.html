@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | User Profile</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="header-bar"></div>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img id="campusconnect-logo" src="./media/CampusConnect-logo.png" alt="Campus Connect Logo" width="80" height="90">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="homePage.html">Home</a>
+            </li>
+            <li>
+                <a href="feedPage.html">Feed</a>
+            </li>
+            <li>
+                <a href="groupPage.html">Groups</a>
+            </li>
+            <li>
+                <a href="materialPage.html">Study Materials</a>
+            </li>
+            <li>
+                <a href="profilePage.html">Profile</a>
+            </li>
+            <li>
+                <a href="contactPage.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero_2">
+        <div class="hero-overlay"></div>
+        <div class="text-overlay">
+            <h1 class="slogan">Your Profile</h1>
+        </div>
+    </div>
+
+    <main class="profile-main">
+        <section class="profile-info">
+            <div class="profile-card">
+                <img id="profile-picture" src="./media/default-avatar.png" alt="Profile Picture">
+                <h2 id="profile-name">User Name</h2>
+                <p id="profile-email">email@example.com</p>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </section>
+
+        <section class="profile-activities">
+            <div class="profile-section">
+                <h3>My Posts</h3>
+                <div id="userPosts" class="cards-container">
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h3>Joined Groups</h3>
+                <div id="userGroups" class="cards-container">
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h3>Uploaded Materials</h3>
+                <div id="userMaterials" class="cards-container">
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <footer>
+    <p>&copy; 2025 Campus Connect</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+</html>
